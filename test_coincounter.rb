@@ -40,4 +40,9 @@ class TestCoincounter < Minitest::Test
 		assert_equal({},coinchanger(0))
 	end
 
+	def test_10_example_one_from_homework
+		assert_equal({:dime=> 1, :penny => 1},coinchanger(11))
+	end
+
+
 end
