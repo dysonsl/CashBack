@@ -11,4 +11,12 @@ class TestCoincounter < Minitest::Test
 	def test_2_penny_in_penny_out
 		assert_equal({:penny => 1}, coinchanger(1))
 	end
+
+	def test_3_78_in_3_quarters_3_penny_out
+		assert_equal({:quarter => 3, :penny => 3},coinchanger(78))
+	end
+
+	def test_3_100_in_4_quarters_out
+		assert_equal({:quarter => 4},coinchanger(100))
+	end
 end
