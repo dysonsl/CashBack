@@ -8,4 +8,7 @@ class TestCoincounter < Minitest::Test
 		assert_equal(1,1)
 	end
 
+	def test_2_penny_in_penny_out
+		assert_equal({:penny => 1}, coinchanger(1))
+	end
 end
