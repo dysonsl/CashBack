@@ -28,7 +28,7 @@ class TestCoincounter < Minitest::Test
 		assert_equal({:quarter => 395, :penny => 1},coinchanger(9876))
 	end
 
-	def test_6_big_money_with_all_coins
+	def test_7_big_money_with_all_coins
 		assert_equal({:quarter => 75, :dime => 1, :nickel => 1, :penny => 3},coinchanger(1893))
 	end
 
