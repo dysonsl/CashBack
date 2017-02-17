@@ -32,4 +32,8 @@ class TestCoincounter < Minitest::Test
 		assert_equal({:quarter => 75, :dime => 1, :nickel => 1, :penny => 3},coinchanger(1893))
 	end
 
+	def test_7_increment_dimes
+		assert_equal({:dime => 2, :penny => 3},coinchanger(23))
+	end
+
 end
