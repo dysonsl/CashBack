@@ -1,0 +1,11 @@
+Total Amount Due:<br>
+<form action="cashback" method="post">
+<input type="text" name="amount_due" required autofocus><%= cost %>
+<br>
+<br>
+Total Amount Paid:<br>
+<input type="text" name="amount_paid" required autofocus><%= paid %><br>
+<input type="submit" name="Calculate">
+<br><br>
+Change Due:<%= change_due %><br>
+<%= result %>
