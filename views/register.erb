@@ -1,11 +1,24 @@
-Total Amount Due:<br>
-<form action="cashback" method="post">
-<input type="text" name="amount_due" required autofocus><%= cost %>
-<br>
-<br>
-Total Amount Paid:<br>
-<input type="text" name="amount_paid" required autofocus><%= paid %><br><br>
-<input type="submit" name="submit" value="Calculate">
-<br><br>
-Change Due:    <%= change_due %><br><br>
-Cash from drawer:     <%= result %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Cash Register Function</h1>
+		<h2>Shows Quantities to Pull from Drawer</h2>
+		<hr>
+		<form action="cashback" method="post">
+		Total Amount Due:<br>
+		$<input type="text" name="amount_due" required autofocus> $<%= cost %>
+		<br>
+		<br>
+		Total Amount Paid:<br>
+		$<input type="text" name="amount_paid" required autofocus> $<%= paid %><br><br>
+		<input type="submit" name="submit" value="Calculate">
+		<br><br>
+		Change Due:    $<%= change_due %><br><br>
+		Cash from drawer:     <%= result %>
+		</form>
+	</body>
+
+</html>

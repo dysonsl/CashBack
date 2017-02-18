@@ -1,7 +1,7 @@
 def cash_register(cost, paid)
 
 	calc_difference = (paid - cost) * 100  # remove decimal point
-	difference = calc_difference.round(3).to_i  # remove float with correct rounding.
+	difference = calc_difference.round(3).to_i  # remove float with correct rounding.  
 #	puts difference
 	change_values = {:fifty => 5000, :twenty => 2000, :ten => 1000, :five => 500, :dollar => 100, :quarter => 25, :dime => 10, :nickel => 5, :penny => 1}
 
@@ -13,6 +13,7 @@ def cash_register(cost, paid)
 			difference = difference - (coin_count * coin_value)
 		end
 	end
+#	puts coin_return
 	coin_return
 
 end

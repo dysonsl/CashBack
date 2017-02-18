@@ -3,7 +3,7 @@ require_relative "cashregister.rb"
 
 class TestCashregister < Minitest::Test
 
-# Simple test to ensure basic shell of test file and required_relative is in place
+# Simple test to ensure basic shell of test file and required_relative are in place
 	def test_1_1_returns_1
 		assert_equal(1,1)
 	end
