@@ -9,8 +9,8 @@ post "/cashback" do
 	cost = params[:amount_due].to_f
 	paid = params[:amount_paid].to_f
 
-	change_due = paid - cost  #need to figure out how to avoid this horrible float
-	
+	change_due = ((paid - cost).round(3))  #horrible float...rounds off weird on its own
+
 	result = cash_register(cost, paid)
 
 	erb :register, :locals => {:result => result, :cost => cost, :paid => paid, :change_due => change_due}

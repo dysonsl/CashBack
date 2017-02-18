@@ -14,3 +14,5 @@ File Index
 
 - CoinCounter.rb # outputs a hash of coins required to make appropriate change from input (*test_coincounter.rb*)
 - CashRegister.rb # takes 2 inputs, cost and paid, as decimal-based inputs and outputs hash of bills and coins due as change (*test_cashregister.rb*)
+- app.rb # Sinatra app using CashRegister.rb
+- views\register.erb # single view to play with html syntax and css
