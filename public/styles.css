@@ -16,3 +16,7 @@ body {
 form {
 	padding: 30px;
 }
+
+fieldset {
+	width: 500px;
+}
