@@ -20,3 +20,41 @@ form {
 fieldset {
 	width: 500px;
 }
+
+.cashlist {
+	position: relative;
+}
+
+.cashlist img {
+	position: absolute;
+}
+
+.fifty {
+	top: 0px;
+	left: 0px;
+	z-index:0;
+}
+
+.twenty {
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+.ten {
+	top: 20px;
+	left: 20px;
+	z-index:2;
+}
+
+.five {
+	top: 30px;
+	left: 30px;
+	z-index:3;
+}
+
+.dollar {
+	top: 40px;
+	left: 40px;
+	z-index:4;
+}
