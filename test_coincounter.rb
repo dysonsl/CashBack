@@ -52,4 +52,8 @@ class TestCoincounter < Minitest::Test
 		assert_equal({:quarter => 3,:dime => 1, :nickel=> 1, :penny => 3},coinchanger(93))
 	end
 
+	def test_13_test_modeling_Matts_intriguing_perspective
+		assert_equal(3,coinchanger(93)[:penny])
+	end
+
 end

@@ -3,7 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
-	<body>
+
 		<h1>Cash Register Function</h1>
 		<h2>Shows Quantities to Pull from Drawer</h2>
 <!--		<hr>  horizonal line -->
@@ -24,47 +24,45 @@
 		</fieldset>
 
 		<% if result != "" %>
-		<div class="cashlist">
-			<div class="fifty">
+
 			<% if result[:fifty] != nil %>
 				<% result[:fifty].times do %>
-					<img src="images/fifty.png" alt="Fifty">
+					<img class="fifty" src="images/fifty.png" alt="Fifty" />
 				<% end %>	
 			<% end %>
-			</div>
 
 			<div class="twenty">
 			<% if result[:twenty] != nil %>
 				<% result[:twenty].times do %>
-					<img src="images/twenty.png">
+					<img src="images/twenty.png" alt="Twenty" />
 				<% end %>	
 			<% end %>
 			</div>
-			
-			<div class="ten">		
+	
+			<div class="ten">
 			<% if result[:ten] != nil %>
 				<% result[:ten].times do %>
-					<img src="images/ten.png">
+					<img src="images/ten.png" alt="Ten" />
 				<% end %>	
 			<% end %>
 			</div>
-			
+
 			<div class="five">
 			<% if result[:five] != nil %>
 				<% result[:five].times do %>
-					<img src="images/five.png">
+					<img src="images/five.png" alt="Five" />
 				<% end %>
 			<% end %>
 			</div>
-			
-			<div class="dollar">			
+
+			<div class="dollar">
 			<% if result[:dollar] != nil %>
 				<% result[:dollar].times do %>
-					<img src="images/dollar.png">
+					<img src="images/dollar.png" alt="Dollar" />
 				<% end %>
 			<% end %>
-			</div>		
-			
+			</div>
+		
 			<div class="quarter">
 			<% if result[:quarter] != nil %>
 				<% result[:quarter].times do %>
@@ -96,10 +94,6 @@
 				<% end %>
 			<% end %>
 			</div>
-			
-		</div>
+	
 		<% end %>
-
-	</body>
-
 </html>

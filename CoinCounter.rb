@@ -8,7 +8,7 @@ def coinchanger(input)
 		if input >= coin_value
 			coin_count = input / coin_value
 			coin_return[coin_name] = coin_count
-			input = input - (coin_count * coin_value)
+			input -= (coin_count * coin_value)
 		end
 	end
 	coin_return
