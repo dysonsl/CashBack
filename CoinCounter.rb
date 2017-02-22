@@ -1,6 +1,6 @@
 def coinchanger(input)
 
-	change_values = {:quarter => 25, :dime => 10, :nickel => 5, :penny => 1}
+	change_values = {quarter: 25, dime: 10, nickel: 5, penny: 1}
 
 	coin_return = Hash.new
 
