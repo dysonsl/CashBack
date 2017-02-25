@@ -4,12 +4,12 @@
 		<h2>Cash Register Function</h1>
 		<h3>Shows Quantities to Pull from Drawer</h2>
 <!--		<hr>  horizonal line -->
+
 		<fieldset>
 		<form action="cashback" method="post">
 		Total Amount Due:<br>
 		$<input type="text" name="amount_due" required autofocus> <%= display_cost %>
-		<br>
-		<br>
+		<br><br>
 		Total Amount Paid:<br>
 		$<input type="text" name="amount_paid" required autofocus> <%= display_paid %><br><br>
 		<input type="submit" name="submit" value="Calculate">
@@ -25,10 +25,11 @@
 			<% result.each do |cash, count| %>
 				<% if count != nil %>
 					<% count.times do %>
-						<img src="images/<%= cash %>.png" alt="<%=cash %>" />
+						<img src="images/<%= cash %>.png" alt="<%=cash %>">
 					<% end %>	
 				<% end %>
 			<% end %>
 		<% end %>
 		</div>
+
 </html>

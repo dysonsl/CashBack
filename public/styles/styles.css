@@ -19,7 +19,7 @@ body {
 }
 
 form {
-	padding: 30px;
+	padding: 20px;
 	position: relative;
 }
 
@@ -51,10 +51,11 @@ footer {
 	text-align: center;
 }
 
+.right_side {
+	margin: -280px 0px 15px 550px;
+}
+
 .right_side img {
 	float: left;
-	margin-right: 0;
-	vertical-align: top;
 	position: relative;
-	display: block;
 }
