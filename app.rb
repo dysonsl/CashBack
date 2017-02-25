@@ -1,6 +1,8 @@
 require 'sinatra'
 require_relative 'CashRegister.rb'
 
+set :port, 4568
+
 get "/" do 
 	erb :register, :locals => {:result => "", :display_cost => "", :display_paid => "", :change_due => ""}
 end
