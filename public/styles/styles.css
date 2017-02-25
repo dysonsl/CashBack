@@ -1,22 +1,60 @@
 h1 {
 	color: #000000;
-	font: 32px/1 Tahoma, Verdana, sans-serif;
+	font: 2em Tahoma, Verdana, sans-serif;
 }
 
 h2 {
-	color: #006400;
-	font: 28px/1 Tahoma, Verdana, sans-serif;
+	color: #000080;
+	font: 1.5em Tahoma, Verdana, sans-serif;
+}
+
+h3 {
+	color: #0000CD;
+	font: 1.25em Tahoma, Verdana, sans-serif;
 }
 
 body {
 	font: 1em Tahoma, Verdana, sans-serif;
-	background-color: #90EE90;
+	background-color: #D3D3D3;
 }
 
 form {
 	padding: 30px;
+	position: relative;
 }
 
 fieldset {
 	width: 500px;
+}
+
+header, footer {
+	background-color: #6495ED;
+}
+
+header {
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 30px;
+}
+
+footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	position: fixed;
+	font: 1.25em Tahoma, Verdana, sans-serif
+}
+
+.center {
+	text-align: center;
+}
+
+.right_side img {
+	float: left;
+	margin-right: 0;
+	vertical-align: top;
+	position: relative;
+	display: block;
 }

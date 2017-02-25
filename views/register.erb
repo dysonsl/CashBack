@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	</head>
 
-		<h1>Cash Register Function</h1>
-		<h2>Shows Quantities to Pull from Drawer</h2>
+		<h2>Cash Register Function</h1>
+		<h3>Shows Quantities to Pull from Drawer</h2>
 <!--		<hr>  horizonal line -->
 		<fieldset>
 		<form action="cashback" method="post">
@@ -23,77 +20,15 @@
 		</form>
 		</fieldset>
 
+		<div class="right_side">
 		<% if result != "" %>
-
-			<% if result[:fifty] != nil %>
-				<% result[:fifty].times do %>
-					<img class="fifty" src="images/fifty.png" alt="Fifty" />
-				<% end %>	
-			<% end %>
-
-			<div class="twenty">
-			<% if result[:twenty] != nil %>
-				<% result[:twenty].times do %>
-					<img src="images/twenty.png" alt="Twenty" />
-				<% end %>	
-			<% end %>
-			</div>
-	
-			<div class="ten">
-			<% if result[:ten] != nil %>
-				<% result[:ten].times do %>
-					<img src="images/ten.png" alt="Ten" />
-				<% end %>	
-			<% end %>
-			</div>
-
-			<div class="five">
-			<% if result[:five] != nil %>
-				<% result[:five].times do %>
-					<img src="images/five.png" alt="Five" />
+			<% result.each do |cash, count| %>
+				<% if count != nil %>
+					<% count.times do %>
+						<img src="images/<%= cash %>.png" alt="<%=cash %>" />
+					<% end %>	
 				<% end %>
 			<% end %>
-			</div>
-
-			<div class="dollar">
-			<% if result[:dollar] != nil %>
-				<% result[:dollar].times do %>
-					<img src="images/dollar.png" alt="Dollar" />
-				<% end %>
-			<% end %>
-			</div>
-		
-			<div class="quarter">
-			<% if result[:quarter] != nil %>
-				<% result[:quarter].times do %>
-					<img src="images/quarter.png" width="5%" height="5%">
-				<% end %>
-			<% end %>
-			</div>
-			
-			<div class="dime">			
-			<% if result[:dime] != nil %>
-				<% result[:dime].times do %>
-					<img src="images/dime.png" width="5%" height="5%">
-				<% end %>
-			<% end %>	
-			</div>	
-			
-			<div class="nickel">
-			<% if result[:nickel] != nil %>
-				<% result[:nickel].times do %>
-					<img src="images/nickel.png" width="5%" height="5%">
-				<% end %>
-			<% end %>	
-			</div>		
-			
-			<div class="penny">
-			<% if result[:penny] != nil %>
-				<% result[:penny].times do %>
-					<img src="images/penny.png" width="5%" height="5%">
-				<% end %>
-			<% end %>
-			</div>
-	
 		<% end %>
+		</div>
 </html>
